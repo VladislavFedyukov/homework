@@ -22,7 +22,3 @@ def most_frequent(text: str) -> list[str]:
             if dict_counts[k] == i:
                 new_sorted_dictionary[k] = dict_counts[k]
     return list(new_sorted_dictionary.items())[0: SHOW_LIMIT]
-
-text = 'Яндекс научил большую языковую модель YandexGPT кратко пересказывать текст. Достаточно дать нейросети ссылку на статью в интернете, и она тезисно изложит основные мысли и идеи.'
-
-print(most_frequent(text))
